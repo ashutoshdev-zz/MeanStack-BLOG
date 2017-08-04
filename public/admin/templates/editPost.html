@@ -1,0 +1,44 @@
+
+<div class="row full-height">
+    <div class='col-lg-8'>
+      <div class='form-group'>
+        <input type='text' placeholder='Title' ng-model='post.title' name='title' class='form-control'>
+      </div>
+    </div>
+    <div class="col-lg-8">
+        <input type='text' placeholder='Side Image' ng-model='post.simage' name='simage' class='form-control'>  
+    </div>
+     <div class="col-lg-8">
+         <input type='text' placeholder='Header Image' ng-model='post.himage' name='himage' class='form-control'>
+    </div>
+     <div class="col-lg-8">
+         <input type='text' placeholder='Parramlink' ng-model='post.paramal' name='paramlink' class='form-control'>
+    </div>
+   
+     <div class="col-lg-8">
+        <textarea class="col-md-8" ng-model='post.metadescription' placeholder='Write your metadescription'></textarea>        
+    </div>
+     <div class="col-lg-8">
+        <textarea class="col-md-8" ng-model='post.metakeywords' placeholder='Write your metakeywords'></textarea>        
+    </div>
+     
+    <div class="col-lg-8">
+         <input type='hidden' placeholder='blog' ng-model='post.id' name='id' class='form-control'>
+     
+    </div>
+     <div class="col-lg-8 full-height">
+        <textarea class="col-md-8 full-height" id="pad" ng-model='post.description' name="description" placeholder='Write your description'></textarea>
+        <div class="col-md-3 full-height" id="markdown">
+          <div btf-markdown='post.description'></div>
+        </div>
+    </div>
+     <div class="col-lg-8">
+      <div class='btn btn-success pull-right' ng-click='editPost()'>Publish Post</div>
+       </div>
+    <div class="col-lg-8">
+        <div class="alert alert-success">
+  <strong ng-bind="update"></strong> 
+</div>
+   
+     </div>
+</div>
